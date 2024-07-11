@@ -1,18 +1,19 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
-  darkMode: "selector",
+const config = {
+  darkMode: ["class"],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
+  prefix: "",
   theme: {
-    colors: {
-      white: "#fdfffc",
-      black: "#011627",
+    container: {
+      center: true,
     },
   },
-  plugins: [],
-};
+} satisfies Config;
+
 export default config;

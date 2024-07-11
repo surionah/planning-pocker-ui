@@ -1,3 +1,9 @@
-export default function WaitingRoom() {
-  return <div className="text-black dark:text-white">Waiting room</div>;
+import WaitingRoomForm from "@/components/WaitingRoomForm/waitingRoomForm";
+
+export default function WaitingRoomPage() {
+  return (
+    <main className="flex-1 pt-12">
+      <WaitingRoomForm />
+    </main>
+  );
 }
